@@ -44,7 +44,7 @@ int egale (int a[100], int s, int d)
         else return 1;
     else
     {
-        m=(li+ls)/2;
+        m=(s+d)/2;
         s=egale(s,m);
         d=egale(m+1,d);
         return e1&& e2;
