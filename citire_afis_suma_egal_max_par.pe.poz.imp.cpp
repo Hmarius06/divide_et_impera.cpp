@@ -37,12 +37,18 @@ int suma (int a[100], int s, int d)
 }
 int egale (int a[100], int s, int d)
 {
-    int m, e=1;
-    if (s==d) return 1;
-        else { m=(s+d)/2;
-               return egale (a, s, m) && egale (a, m+1, d) && (a[s]==a[m+1]);
-             }
-    return e;
+    int m, e1, e2;
+    if(s==d)return 1;
+    else if(s+1==d)
+        if(a[s]!=a[d]) return 0;
+        else return 1;
+    else
+    {
+        m=(li+ls)/2;
+        s=egale(s,m);
+        d=egale(m+1,d);
+        return e1&& e2;
+    }
 }
 int maxim(int a[100], int s, int d)
 {
